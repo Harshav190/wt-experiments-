@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Electrical Items Bill Generator</title>
+  <style media="screen">
+     body
+     {
+       background-image: url("https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWx8ZW58MHx8MHx8&w=1000&q=80");
+       background-repeat: no-repeat;
+       background-size: cover;
+       font weight:1000px;
+     }
+    .box1 {
+      border: 5px solid;
+      border-color:orange;a
+      margin: auto;
+      width: 50%;
+      background-color: ;
+      margin-left: 300px;
+    }
+
+    .box1 h1 {
+      text-align: center;
+    }
+    .box1{
+      background-color:white;
+    }
+
+  </style>
+  <script type="text/javascript">
+    function f() {
+
+      const v1 = parseFloat(document.getElementById("starter").value);
+      const v2 = parseFloat(document.getElementById("curries").value);
+      const v3 = parseFloat(document.getElementById("breads").value);
+      const v4 = parseFloat(document.getElementById("biryanis").value);
+      const v5 = parseFloat(document.getElementById("drinks").value);
+      const v6 = v1 + v2 + v3 + v4 + v5;
+      document.getElementById('s').innerHTML = v1;
+      document.getElementById('c').innerHTML = v2;
+      document.getElementById('b').innerHTML = v3;
+      document.getElementById('bir').innerHTML = v4;
+      document.getElementById('d').innerHTML = v5;
+      document.getElementById('p').innerHTML = v6;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="box1">
+    <h1>Restaurant Bill Generator</h1>
+    <form class="" action="" method="post">
+      <table cellspacing = 10px>
+        <tr>
+          <td>
+            <label for="starter">Starter:</label>
+          </td>
+          <td>
+            <select id="starter" name="starter">
+              <option value="0">None</option>
+              <option value="150">veg Manchuria - 150/-</option>
+              <option value="170">Paneer Manchuria - 170/-</option>
+              <option value="170">chicken wings - 170/-</option>
+              <option value="230">cripsy fried chicken - 230/-</option>
+              <option value="200">chicken Manchuria - 200/-</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="curries">Curries:</label>
+          </td>
+          <td>
+            <select id="curries" name="curries">
+              <option value="0">None</option>
+              <option value="190">Kadai Paneer - 190/-</option>
+              <option value="200">Paneer Butter masala - 200/-</option>
+              <option value="150">Mushroom Masala - 150/-</option>
+              <option value="225">Chicken Butter Masala - 225/-</option>
+              <option value="210">Shirmp curry - 210/-</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="breads">Indian Breads:</label>
+          </td>
+          <td>
+            <select id="breads" name="breads">
+              <option value="0">None</option>
+              <option value="40">Butter Naan - 40/-</option>
+              <option value="35">Plain Naan - 35/-</option>
+              <option value="50">Garlic Naan - 50/-</option>
+              <option value="30">Butter Roti - 30/-</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="biryanis">Biryanis</label>
+          </td>
+          <td>
+            <select id="biryanis" name="biryanis">
+              <option value="0">None</option>
+              <option value="200">veg Biryani - 200/-</option>
+              <option value="230">Paneer Biryani - 230/-</option>
+              <option value="289">Chicken Biryani - 289/-</option>
+              <option value="300">Shrimp Biryani - 300/-</option>
+              <option value="350">Mutton Biryani - 350/-</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="drinks">Drinks</label>
+          </td>
+          <td>
+            <select id="drinks" name="drinks">
+              <option value="0">None</option>
+              <option value="10">Water Bottle - 10/-</option>
+              <option value="20">Soda - 20/-</option>
+              <option value="100">Beer - 100/-</option>
+              <option value="550">Wine - 550/-</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" name="button" onclick="f()">submit</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Starter:</p>
+          </td>
+          <td>
+            <p id="s"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Curries:</p>
+          </td>
+          <td>
+            <p id="c"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Breads:</p>
+          </td>
+          <td>
+            <p id="b"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Biryanis:</p>
+          </td>
+          <td>
+            <p id="bir"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Drinks:</p>
+          </td>
+          <td>
+            <p id="d"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Your total is:</p>
+          </td>
+          <td>
+            <p id="p"></p>
+          </td>
+        </tr>
+
+      </table>
+    </form>
+  </div>
+</body>
+
+</html>

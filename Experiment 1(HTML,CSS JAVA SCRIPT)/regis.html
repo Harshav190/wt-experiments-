@@ -1,0 +1,76 @@
+<html>
+<head>
+   <link rel="stylesheet" href="reg.css">
+   <title>Registration Form</title>
+</head>
+<body>
+   <div class="form">
+     <br>
+    <h1 class="jaf">Registration Form</h1>
+    <marquee class="details">**Please upload the latest CV**&ensp;&ensp;&ensp;&ensp;**Please file the correct Details**</marquee>
+    <br>
+<br>
+    <form action="" method="post">
+      <div><label for="fname" class="fn">First Name:</label>
+        <input type="text" id="fname" name="fnm" value=""></input>
+        <label for="sname" class="ln">Last Name:</label>
+        <input type="text" id="sname" name="lnm" value=""></input>
+      </div>
+      <br>
+      <br>
+      <div class="d">
+        <label for="email" class="em">email:</label>
+        <input type="email" id="email" class="e" name="em" value=""></input>
+        <label for="jrole" class="jr">Job Role:</label>
+        <select id="jrole" name="jr" value="">
+          <option value:"sde">Software Developer</option>
+          <option value:"ce">Cyber security engineer</option>
+          <option value:"FD">Front end developer</option>
+          <option value:"FSD">Full Stack Developer</option>
+          </select>
+      </div>
+      <br>
+      <br>
+      <div>
+         <label for="Gender" class="fn">Gender:</label>
+         <select id="Gender" class="e" name="gen" value="">
+          <option value:"male">Male</option>
+          <option value:"female">Female</option>
+         </select>
+         <label for="pn" class="pn">Password:</label>
+        <input type="password" id="pn" name="pass" value=""></input>
+      </div>
+      <br>
+      <br>
+      <div>
+      Address:
+      <textarea cols="80" rows="5" value="address" class="fn" name="add" value="">
+       </textarea>
+      </div>
+      <br>
+      <br>
+      <div>
+          <label for="pincode" class="fn">Pin code:</label>
+        <input type="text" id="pincode" name="pinc" value=""></input>
+         <label for="state" class="ln">State:</label>
+        <input type="text" id="state" name="stat" value=""></input>
+      </div>
+      <br>
+      <br>
+      <div>
+        <label for="sd" class="fn">Start Date:</label>
+        <input type="date" id="sd" name="DOB" value=""></input>
+        <label for="file" class="ln">Upload CV:</label>
+        <input type="file" id="file"  />
+    </div>
+   <br>
+   <br>
+   <div style="text-align:center">
+    <input type="submit" />
+</div>
+<br>
+<br>
+    </form>
+   </div>
+</body>
+</html>
