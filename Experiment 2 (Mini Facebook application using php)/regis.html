@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #d1d6de;
+		}
+
+		.container {
+			margin: 50px auto;
+			background-color: #FFFFFF;
+			padding: 20px;
+			border-radius: 10px;
+			/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+			box-shadow: 0px 0px 5px black;
+			width: 500px;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+
+		label {
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=tel],
+		input[type=date],
+		input[type=password] {
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		}
+
+		input[type=radio] {
+			margin-right: 10px;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: #FFFFFF;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		input[type=submit]:hover {
+			background-color: #3E8E41;
+		}
+		.center{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: #5794f7; font-size: 48px;" class="center">facebook</h1>
+	<div class="container">
+		<h1 class="center">Create a new account</h1>
+		<h3 class="center">It's quick and easy</h3>
+		<form action="register.php" method="post">
+			<label for="name">Name:</label>
+			<input type="text" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" name="email" required>
+
+			<label for="mobile">Mobile Number:</label>
+			<input type="tel" name="mobile" required>
+
+			<label for="dob">Date of Birth:</label>
+			<input type="date" name="dob" required>
+
+
+			<label for="gender">Gender:</label>
+			<input type="radio" name="gender" value="male" required> Male
+			<input type="radio" name="gender" value="female" required> Female
+			<input type="radio" name="gender" value="other" required> Other
+       <br />
+       <br />
+       <br />
+			<label for="password">Password:</label>
+			<input type="password" name="password" required>
+
+			<input type="submit" value="Sign Up">
+		</form>
+	</div>
+</body>
+</html>
